@@ -1,0 +1,12 @@
+
+#editor files
+.idea
+
+#mockups
+/example-markup
+
+#dependencies
+/node_modules
+
+# misc
+.DS_Store

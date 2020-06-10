@@ -16,7 +16,7 @@ function asyncHandler(cb){
 /* GET articles listing. */
 router.get('/', asyncHandler(async (req, res) => {
   const books = await Book.findAll();
-  res.render("books/index", { book: books, title: "Books" });
+  res.render("/index", { book: books, title: "Books" });
 }));
 
 /* Create a new article form. */

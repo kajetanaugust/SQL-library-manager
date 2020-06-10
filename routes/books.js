@@ -13,10 +13,10 @@ function asyncHandler(cb){
   }
 }
 
-/* GET articles listing. */
+/* GET all books */
 router.get('/', asyncHandler(async (req, res) => {
-  const books = await Book.findAll();
-  res.render("/index", { book: books, title: "Books" });
+  const books = await Book.findAll({ order: [['createdAt', 'DESC']]});
+  res.render("index", { books, title: "Books" });
 }));
 
 /* Create a new article form. */

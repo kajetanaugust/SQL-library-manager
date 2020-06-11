@@ -3,7 +3,7 @@ extends layout
 block content
     h2= "Edit Book Info"
 
-    include inputs-errors
+    include errors
 
     form(action="/books/" + book.id, method="post")
         p

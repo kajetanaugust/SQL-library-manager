@@ -7,6 +7,8 @@ const logger = require('morgan');
 const routes = require('./routes/index');
 const books = require('./routes/books');
 
+// const errorStatus = error.status;
+
 const app = express();
 
 // view engine setup
@@ -22,6 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/books', books);
 
+
 // catch 404 and forward to error handler
 app.use( (req, res, next) => {
   next(createError(404));
@@ -36,6 +39,8 @@ app.use( (err, req, res, next) => {
   // render the error page
   res.status(err.status || 500);
   res.render('error');
+
+
 });
 
 module.exports = app;

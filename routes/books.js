@@ -43,13 +43,15 @@ router.post('/new', asyncHandler(async (req, res) => {
 /* Edit book form. */
 router.get("/:id", asyncHandler(async(req, res) => {
   const book = await Book.findByPk(req.params.id);
-  let err;
+  // let err;
   if(book) {
     res.render("update-book", { book: book, title: book.title, h1: "Updating" });
   } else {
-    err = new Error('Book Page Not Found') //create 404 status error
-        err.statusCode = 404
-        res.render('page-not-found')
+    // err = new Error('Book Page Not Found') //create 404 status error
+        res.statusCode = 404;
+    // res.sendStatus(404);
+    res.render('page-not-found')
+
   }
 }));
 

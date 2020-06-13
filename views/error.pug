@@ -1,7 +1,9 @@
 extends layout
 
 block content
-        h1 Server Error
-        p Sorry! There was an unexpected error on the server
-        p.error
-        a.button(href='/books') Home
+        div.addLine
+                h2.error.title Server Error
+                p.error Sorry! There was an unexpected error on the server
+                p.error
+        div.errorButton
+                a.button(href='/books') Home

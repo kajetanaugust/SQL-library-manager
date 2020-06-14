@@ -8,7 +8,7 @@ This app is an example of management system for the library. It uses simple SQLi
 - User can add the books to the database by clicking the "Create New Book" button on the main page. User will be redirected to "New Book" form.
   Form uses validation. The form can't be submitted without filling the "title" or "author" fields. In that case the page will display the error messages.
   If all the required fields will be filled, the form will be submitted, and the book will appear in the database and index page.
-- When the entry on the index page is clicked, user will be redirected to the "Edit Book Info" page. On this page user can edit the book informations or delete the book by clicking the "Delete Book" button.
+- When the entry on the index page is clicked, user will be redirected to the "Edit Book Info" page. On this page user can edit the book informations or delete the book by clicking the "Delete Book" button.`<br>`
   **!! WARNING !! DELETING A BOOK FROM THE PAGE ALSO DELETES IT FROM THR DATABASE !! WARNING !!**
 
 ### How does it work

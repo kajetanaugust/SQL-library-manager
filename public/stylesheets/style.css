@@ -8,6 +8,13 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin: auto auto;
 }
+header {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+}
 
 header h1 {
   font-weight: 500;
@@ -269,8 +276,8 @@ label {
   font-weight: 500;
   min-width: 100px;
   display: inline-block;
-  margin-right: 10px;
-
+  /*margin-right: 10px;*/
+  text-align: left;
 }
 
 input[type=text] {
